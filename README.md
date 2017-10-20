@@ -14,20 +14,7 @@ The voting-based algorithms are advantageous in that they provide low-latency fi
 
 | Framework | Consensus Algorithm | Advantages |
 | :---         |     :---:      |          ---: |
-| Fabric   | Kafka     | Provides crash fault
-tolerance. Finality
-happens in a matter of
-seconds.    |
-| Indy     | RBFT      | Provides Byzantine
-fault tolerance. Finality
-happens in a matter of
-seconds.     |
-| Iroha   | Sumeragi     | Provides Byzantine
-fault tolerance. Finality
-happens in a matter
-of seconds. Scale to
-petabytes of data,
-distributed across many
-clusters (Struckhoff, 2016).    |
-| Sawtooth     | PoET      | Provides scalability and
-Byzantine fault tolerance.   |
+| Fabric   | Kafka     | Provides crash fault tolerance. Finality happens in a matter of seconds.    |
+| Indy     | RBFT      | Provides Byzantine fault tolerance. Finality happens in a matter of seconds.     |
+| Iroha   | Sumeragi     | Provides Byzantine fault tolerance. Finality happens in a matter of seconds. Scale to petabytes of data, distributed across many clusters (Struckhoff, 2016).    |
+| Sawtooth     | PoET      | Provides scalability and Byzantine fault tolerance.   |
