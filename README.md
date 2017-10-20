@@ -12,9 +12,22 @@ The lottery-based algorithms are advantageous in that they can scale to a large 
 The voting-based algorithms are advantageous in that they provide low-latency finality. When a majority of nodes validates a transaction or block, consensus exists and finality occurs. Because voting-based algorithms typically require nodes to transfer messages to each of the other nodes on the network, the more nodes that exist on the network, the more time it takes to reach consensus. This results in a trade-off between scalability and speed.
 
 
-| Consensus Algorithm     | Consensus Approach |
-| ---      | ---       |
-| Kafka in
-Hyperledger Fabric
-Ordering Service | `         |
-| Pipe     | \|        |
+| Framework | Consensus Algorithm | Advantages |
+| :---         |     :---:      |          ---: |
+| Fabric   | Kafka     | Provides crash fault
+tolerance. Finality
+happens in a matter of
+seconds.    |
+| Indy     | RBFT      | Provides Byzantine
+fault tolerance. Finality
+happens in a matter of
+seconds.     |
+| Iroha   | Sumeragi     | Provides Byzantine
+fault tolerance. Finality
+happens in a matter
+of seconds. Scale to
+petabytes of data,
+distributed across many
+clusters (Struckhoff, 2016).    |
+| Sawtooth     | PoET      | Provides scalability and
+Byzantine fault tolerance.   |
